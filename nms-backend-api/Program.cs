@@ -17,6 +17,8 @@ namespace nms_backend_api
             builder.Services.AddTransient< StudentRepository>();
             builder.Services.AddTransient<ITeacherRepository, TeacherRepository>();
             builder.Services.AddTransient<ClassRepository>();
+            builder.Services.AddTransient<ScheduleClassRepository>();
+
             builder.Services.AddTransient<IStudentAttendenceRepository, StudentAttendenceRepository>();
             builder.Services.AddTransient<ITeacherAttendenceRepository, TeacherAttendenceRepository>();
             builder.Services.AddTransient<IUserRepository, UserRepository>();

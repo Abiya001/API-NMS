@@ -43,5 +43,10 @@ namespace nms_backend_api.Entity
         [Column(TypeName = "varchar")]
         [StringLength(30)]
         public string Subject { get; set; }
+        
+        public int ClassId { get; set; }
+        [ForeignKey("ClassId")]
+        public Class1 class1 { get; set; }
+
     }
 }

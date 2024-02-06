@@ -16,6 +16,7 @@ namespace nms_backend_api.Entity
             public DbSet<StudentAttendence> StudAttendences { get; set; }
             public DbSet<TeacherAttendence> TeachAttendences { get; set; }
             public DbSet<User> users { get; set; }
+        public DbSet<ScheduleClass> Schclass { get; set; }
 
 
 
